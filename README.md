@@ -7,25 +7,23 @@ A WebApp where students of tertiary institutions can apply for jobs openings whi
 ## INSTRUCTIONS
 ### STEPS To Collaborate on the Repository
 
-Step 1. To Access the repository link, you may go through the invitation email sent, then Click on the CODE button on the upper right-hand Corner of the Repo page.
+Step 1. To Access the repository link, you may go through the invitation email sent, then Click on the FORK button on the upper right-hand Corner of the Repo page to have a copy of the repository.
 
-Step 2. Copy the URL  without quotes "git@github.com:zuri-training/MyInternApp-fe-pjt-38.git".
+Step 2. After Forking the Repo, click and the CODE button then Copy the URL to clone the repository to your machine... you can copy the following without quotes to your command prompt/terminal "git@github.com:zuri-training/MyInternApp-fe-pjt-38.git".
 
-Step 3. Create a separate folder on your desktop or workspace for zuri project, open your command prompt(cmd) or terminal in that location.
-
-Step 4. On your terminal/cmd interface, type: git clone url "git@github.com:zuri-training/MyInternApp-fe-pjt-38.git" 
+Step 3. On your terminal/cmd interface, type: git clone (then paste the copied url above in front and press enter) 
 
 After cloning the Repo, click on:
 
-git checkout -b "ft-username" (to create your new branch for the feature you are adding)
+git checkout -b "fe-branchName" (to create your new branch for the feature you are adding)
 
 Step 4. Add your contribution using :
 
-git add .
+      git add .
 
 Step 5. Commit your changes using
 
-git commit -m "feat: username added"
+      git commit -m "feat: username added" the feature you added.
 
 Step 6. Push your changes using:
 
