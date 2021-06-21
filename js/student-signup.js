@@ -95,7 +95,7 @@ function validateForm() {
 	} else if (password2Value !== passwordValue) {
 		setErrorFor(password2, "Passwords do not match");
 	} else {
-		setSuccessFor(password);
+		setSuccessFor(password2);
 	}
 }
 
