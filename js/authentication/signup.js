@@ -22,7 +22,6 @@ function validateForm() {
 	// Check Firstname
 	if (firstNameValue === "") {
 		setErrorFor(firstName, "First name cannot be blank");
-		return false;
 	} else {
 		setSuccessFor(firstName);
 	}
@@ -30,7 +29,6 @@ function validateForm() {
 	// Check Firstname
 	if (lastNameValue === "") {
 		setErrorFor(lastName, "Last name cannot be blank");
-		return false;
 	} else {
 		setSuccessFor(lastName);
 	}
@@ -38,7 +36,6 @@ function validateForm() {
 	// Check Type of User
 	if (userTypeValue === "") {
 		setErrorFor(userType, "Please select a type of user");
-		return false;
 	} else {
 		setSuccessFor(userType);
 		nextPage(userTypeValue);

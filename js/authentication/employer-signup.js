@@ -32,10 +32,8 @@ function validateForm() {
 	// Check Email
 	if (emailValue === "") {
 		setErrorFor(email, "Email cannot be blank");
-		return false;
 	} else if (!isEmail(emailValue)) {
 		setErrorFor(email, "Please enter a valid email");
-		return false;
 	} else {
 		setSuccessFor(email);
 	}
@@ -43,7 +41,6 @@ function validateForm() {
 	// Check Number
 	if (phoneValue === "") {
 		setErrorFor(phone, "Phone number cannot be blank");
-		return false;
 	} else {
 		setSuccessFor(phone);
 	}
@@ -51,7 +48,6 @@ function validateForm() {
 	// Check country
 	if (countryValue === "") {
 		setErrorFor(country, "Please select a country");
-		return false;
 	} else {
 		setSuccessFor(country);
 	}
@@ -59,7 +55,6 @@ function validateForm() {
 	// Check City
 	if (cityValue === "") {
 		setErrorFor(city, "Please enter a city");
-		return false;
 	} else {
 		setSuccessFor(city);
 	}
@@ -67,7 +62,6 @@ function validateForm() {
 	// Check business
 	if (businessValue === "") {
 		setErrorFor(business, "School cannot be blank");
-		return false;
 	} else {
 		setSuccessFor(business);
 	}
@@ -75,7 +69,6 @@ function validateForm() {
 	// Check role
 	if (roleValue === "") {
 		setErrorFor(role, "Please select a role");
-		return false;
 	} else {
 		setSuccessFor(role);
 	}
@@ -83,7 +76,6 @@ function validateForm() {
 	// Check addresss
 	if (addressValue === "") {
 		setErrorFor(address, "Please enter a address");
-		return false;
 	} else {
 		setSuccessFor(address);
 	}
@@ -91,7 +83,6 @@ function validateForm() {
 	// Check passwords
 	if (passwordValue === "") {
 		setErrorFor(password, "Password cannot be blank");
-		return false;
 	} else {
 		setSuccessFor(password);
 	}
@@ -99,10 +90,8 @@ function validateForm() {
 	// Check password2
 	if (password2Value === "") {
 		setErrorFor(password2, "Password confirmation is required");
-		return false;
 	} else if (password2Value !== passwordValue) {
 		setErrorFor(password2, "Passwords do not match");
-		return false;
 	} else {
 		setSuccessFor(password);
 	}
