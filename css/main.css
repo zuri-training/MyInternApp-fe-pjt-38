@@ -1,10 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,300&display=swap');
+
 *{
   box-sizing: inherit;
   margin: 0;
   padding: 0;
+  list-style: none;
+  
 }
 
 html, body {
   box-sizing: border-box;
 }
+
+a {
+  text-decoration: none;
+}
+
+/* .header nav {
+  padding: 2rem;
+} */
+
+/* .navbar {
+  background-color: #2EC4B6;
+}
+
+.brand-logo a {
+  color: bisque;
+}
+.navbar-brand {
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  font-size: 1.7rem;
+}
+
+.navbar-brand-logo {
+  margin-right: 1rem;
+}
+.navbar-brand-name {
+  margin-right: 2rem;
+} */
+
+
 
