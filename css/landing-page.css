@@ -58,6 +58,8 @@ header {
   padding: .5rem 3rem;
 }
 
+
+
 .btn-started {
   font-size: 1.4rem;
   border-radius: 2rem;
@@ -263,7 +265,7 @@ header {
   position: fixed;
   left: 0;
   top: 0;
-  width: max(25rem, 30%);
+  width: max(25rem, 32%);
   height: 100%;
   background-color: white;
   z-index: 1000;
@@ -281,6 +283,7 @@ header {
   display: initial;
 } 
 
+
 .button-group-collapse {
   align-items: center;
 }
@@ -295,7 +298,7 @@ footer {
   color: white;
   flex-wrap: wrap;
   justify-content: center;
-  
+  text-align: left;
 
 }
 
@@ -315,7 +318,6 @@ footer {
 }
 
 
-
 @media screen and (min-width: 980px) {
   .landing-nav.open .nav-collapse {
     display: none;
@@ -329,11 +331,15 @@ footer {
  
   .landing-nav ul {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     flex-direction: initial;
+/*     
+    width: max(25%, 30%); */
     
-    width: max(25%, 26%);
-    
+  }
+
+  .landing-nav ul li {
+    margin-right: max(1rem, 2rem);
   }
   .landing-nav .auth-buttons {
     display: inline-block;
@@ -343,10 +349,12 @@ footer {
   }
   .nav-toggler {
     display: none;
-  }  
+  } 
+ 
 
   .footer-container {
     flex-direction: row;
+    text-align: left;
   }
 
 
@@ -365,10 +373,11 @@ footer {
   }
 
   .nav-links {
-    padding-left: max(10px, 30px);
-    width: max(10%, 20%);
+    padding-left: max(10px, 28px);
+    width: max(10%, 15%);
   }
 
+  
 
   .navbar-nav {
     display: flex;
@@ -378,6 +387,10 @@ footer {
   .landing-nav ul {
     display: flex;
     justify-content: space-between;
+  }
+
+  .landing-nav ul li {
+    margin-right: max(1rem, 8rem);
   }
   .landing-nav .btn-login {
     display: initial;
