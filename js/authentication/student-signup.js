@@ -32,8 +32,10 @@ function validateForm() {
 	// Check Email
 	if (emailValue === "") {
 		setErrorFor(email, "Email cannot be blank");
+		return false;
 	} else if (!isEmail(emailValue)) {
 		setErrorFor(email, "Please enter a valid email");
+		return false;
 	} else {
 		setSuccessFor(email);
 	}
@@ -41,8 +43,10 @@ function validateForm() {
 	// Check Number
 	if (phoneValue === "") {
 		setErrorFor(phone, "Phone number cannot be blank");
+		return false;
 	} else if (isNaN(phoneValue)) {
 		setErrorFor(phone, "Please enter a valid phone number");
+		return false;
 	} else {
 		setSuccessFor(phone);
 	}
@@ -50,6 +54,7 @@ function validateForm() {
 	// Check country
 	if (countryValue === "") {
 		setErrorFor(country, "Please select a country");
+		return false;
 	} else {
 		setSuccessFor(country);
 	}
@@ -57,6 +62,7 @@ function validateForm() {
 	// Check City
 	if (cityValue === "") {
 		setErrorFor(city, "Please enter a city");
+		return false;
 	} else {
 		setSuccessFor(city);
 	}
@@ -64,6 +70,7 @@ function validateForm() {
 	// Check School
 	if (schoolValue === "") {
 		setErrorFor(school, "School cannot be blank");
+		return false;
 	} else {
 		setSuccessFor(school);
 	}
@@ -71,6 +78,7 @@ function validateForm() {
 	// Check Level
 	if (levelValue === "") {
 		setErrorFor(level, "Please select a level");
+		return false;
 	} else {
 		setSuccessFor(level);
 	}
@@ -78,6 +86,7 @@ function validateForm() {
 	// Check LevSkills
 	if (skillValue === "") {
 		setErrorFor(skill, "Please enter a skill");
+		return false;
 	} else {
 		setSuccessFor(skill);
 	}
@@ -85,6 +94,7 @@ function validateForm() {
 	// Check passwords
 	if (passwordValue === "") {
 		setErrorFor(password, "Password cannot be blank");
+		return false;
 	} else {
 		setSuccessFor(password);
 	}
@@ -92,8 +102,10 @@ function validateForm() {
 	// Check password2
 	if (password2Value === "") {
 		setErrorFor(password2, "Password confirmation is required");
+		return false;
 	} else if (password2Value !== passwordValue) {
 		setErrorFor(password2, "Passwords do not match");
+		return false;
 	} else {
 		setSuccessFor(password2);
 	}
