@@ -109,19 +109,27 @@ header {
 
 .heading-primary{
   font-weight: 500;
-  font-size: 2rem;
+  font-size: 2.2rem;
 }
 
 .heading-primary span {
   display: inline ;
 }
 
+.strong-span {
+  font-weight: 500;
+  font-size: 3rem;
+  display: inline-block;
+  color: #005387;
+}
+
+
 .demarcate {
   display: initial;
 }
 
 .demarcate img {
-  width: 400px;
+  width: 350px;
 }
 
 .page-description {
@@ -134,8 +142,17 @@ header {
  
 }
 
+
+
 .banner {
   padding: 2rem;
+  /* height: 90vh;
+  background-image: url("../img/banner-image.jpg");
+  background-repeat: no-repeat;
+  background-size: cover; */
+  /* background-position: center; */
+  /* position: relative; */
+ 
 }
 
 
@@ -253,8 +270,11 @@ header {
   justify-content: initial;
 }
 .landing-nav .nav-toggler {
-  padding: 2rem;
+  padding: 0 2rem;
   cursor: pointer;
+}
+.landing-nav .nav-toggler.auth-open {
+  margin-left: auto;
 }
 
 .landing-nav ul, .landing-nav .auth-buttons {
@@ -278,23 +298,63 @@ header {
 .landing-nav .nav-collapse .close {
   position: absolute;
   top: 2rem;
-  right: 2rem;
+  right: 4rem;
   cursor: pointer;
   font-weight: 500;
   font-size: 2rem;
 }
-.landing-nav.open .nav-collapse {
+
+.landing-nav .nav-collapse-links .close {
+  left: 4rem;
+}
+
+.landing-nav.open .nav-collapse-links {
   display: initial;
 } 
-
-
-.button-group-collapse {
+.landing-nav.open-auth .nav-collapse-buttons {
+  display: flex;
   align-items: center;
-}
-.button-group-collapse .btn {
-  padding: 1rem 4rem;
+} 
 
+.landing-nav.open-auth .btn {
+  border-radius: 1rem;
+  padding: .5rem 3rem;
 }
+
+
+.nav-collapse .nav-collapse-buttons {
+  display: none;
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: max(25rem, 32%);
+  height: 100%;
+  background-color: white;
+  z-index: 1000;
+  margin: 0 -30px;
+}
+
+.landing-nav .nav-collapse.nav-collapse-buttons {
+  right: 0;
+  left: initial;
+}
+
+.brand-logo img {
+  max-width: 5rem;
+}
+
+
+
+
+
+.nav-collapse-buttons .btn-login {
+  margin-top: 6rem;
+}
+
+/* .button-group-collapse .btn {
+  padding: 1rem 2rem;
+
+} */
 
 footer {
   background-color: black;
@@ -308,17 +368,18 @@ footer {
 
 .footer-container {
   flex-direction: column;
- text-align: center;
+ text-align: left;
+ align-items: center;
   padding: 0 2rem;
 }
 
 .footer-container h2 {
-  font-weight: 500;
-  font-size: 2.3rem;
+  font-weight: 300;
+  font-size: 1.9rem;
 }
 .footer-container a  {
   color: white;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
 }
 
 
@@ -354,6 +415,20 @@ footer {
   .nav-toggler {
     display: none;
   } 
+
+  .brand-logo img {
+    max-width: 10rem;
+  }
+
+  .banner {
+    height: 90vh;
+    background-image: url("../img/banner-image.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background-position: center; */
+    position: relative;
+    margin-top: -4rem;
+  }
  
 
   .footer-container {
@@ -386,6 +461,10 @@ footer {
   .navbar-nav {
     display: flex;
     justify-content: space-around;
+  }
+
+  .brand-logo img {
+    max-width: 100%;
   }
   
   .landing-nav ul {
@@ -576,6 +655,7 @@ footer {
   background-size: cover;
   background-position: center;
   position: relative;
+  margin-top: 0;
 }
 
 .role-cards {

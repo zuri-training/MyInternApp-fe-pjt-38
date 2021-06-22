@@ -4,9 +4,9 @@ function openNav() {
 function closeNav() {
   document.querySelector('.landing-nav')?.classList?.remove('open')
 }
-function signupLoginBtn() {
-  document.querySelector('.landing-nav')?.classList?.add('open');
+function signupLoginBtnOpen() {
+  document.querySelector('.landing-nav')?.classList?.add('open-auth');
 }
-function signupLoginBtn() {
-  document.querySelector('.landing-nav')?.classList?.remove('open');
+function signupLoginBtnClose() {
+  document.querySelector('.landing-nav')?.classList?.remove('open-auth');
 }
