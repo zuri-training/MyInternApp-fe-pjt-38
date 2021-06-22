@@ -38,6 +38,7 @@ function validateForm() {
 		setErrorFor(userType, "Please select a type of user");
 	} else {
 		setSuccessFor(userType);
+		nextPage(userTypeValue);
 	}
 
 	// Check for Gender of User
@@ -78,4 +79,20 @@ function setSuccessFor(input) {
 
 	// add error class to input
 	formInputContainer.classList.remove("error");
+}
+
+// Next page
+function nextPage(userType) {
+	switch (userType) {
+		case "Student":
+			window.location = "./student-signup.html";
+			break;
+		case "Employer":
+			window.location = "./employer-signup.html";
+			break;
+
+		default:
+			window.location = "signup.html";
+			break;
+	}
 }
