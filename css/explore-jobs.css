@@ -1,0 +1,18 @@
+* {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  box-sizing: border-box;
+}
+
+a {
+  color: #fff !important;
+}
+
+.header {
+  background-color: rgb(13, 209, 199);
+}
