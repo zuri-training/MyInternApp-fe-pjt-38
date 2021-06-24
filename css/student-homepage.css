@@ -69,3 +69,9 @@
 	background: rgba(46, 196, 182, 0.2);
 	color: #5b5966;
 }
+
+@media screen and (min-width: 1128px) {
+	.search-jobs input {
+		width: 330px;
+	}
+}
