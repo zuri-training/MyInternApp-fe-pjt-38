@@ -42,10 +42,10 @@ a {
 	left: 0px;
 }
 
-.user-img-dropdown li img {
-	margin-left: 0;
-	width: 60px;
-	height: 60px;
+img.user-img-dropdown {
+	width: 55px;
+	height: 55px;
+	margin-left: -10px;
 }
 
 @media (min-width: 1128px) {
@@ -53,7 +53,9 @@ a {
 		margin-left: 3rem;
 	}
 
-	.user-img-dropdown {
-		margin-left: 3rem;
+	img.user-img-dropdown {
+		width: 55px;
+		height: 55px;
+		margin-top: -5px;
 	}
 }
