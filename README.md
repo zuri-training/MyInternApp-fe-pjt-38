@@ -45,35 +45,40 @@ Javascript (Frontend), Python (Backend), Flutter (Mobile)
 ## Instructions for Frontend developers
 ### STEPS To Collaborate on the Repository
 
-Step 1. To Access the repository link, you may go through the invitation email sent, then Click on the CODE button on the upper right-hand Corner of the Repo page.
+Step 1. To Access the repository link, you may go through the invitation email sent, then Click on the FORK button on the upper right-hand Corner of the Repo page to fork a copy of the repository.
 
-Step 2. Copy the URL  without quotes "git@github.com:zuri-training/MyInternApp-fe-pjt-38.git".
+Step 2. CLONE the repository by clicking on the CODE button, Copy the URL  without quotes   by running > git clone "git@github.com:zuri-training/MyInternApp-fe-pjt-38.git".
 
-Step 3. Create a separate folder on your desktop or workspace for zuri project, open your command prompt(cmd) or terminal in that location.
+Step 3.To collaborate, you need to have a new branch for your feature, give it a name that best describes the feature you are adding
+    to create a new branch run>    git checkout -b branchName 
 
-Step 4. On your terminal/cmd interface, type: git clone url "git@github.com:zuri-training/MyInternApp-fe-pjt-38.git" 
+Step 4: After creating a new branch you need to set the upstream to the original repository which you cloned from by running
 
-After cloning the Repo, click on:
+    > git remote add upstream https://github.com/zuri-training/MyInternApp-fe-pjt-38
 
-git checkout -b "ft-username" (to create your new branch for the feature you are adding)
+Step 5: run > git pull upstream develop, To make sure that you have the upstream
 
-Step 4. Add your contribution using :
+step 6: Add the create files for your work in their folders, for example if you are creating a page, add page-name.css to the css folder, add page.html to the root folder, add page.js to the js folder.
 
-git add .
+Step 7: Now Add your changes in your terminal/cmd interface by running 
+      > git add .
 
-Step 5. Commit your changes using
+Step 8: Commit your message by running 
+      > git commit -m "feat: name of the feature you added"
 
-git commit -m "feat: username added"
+      Note: If it's a bug fix, use "bug:message" for branch and commit message
 
-Step 6. Push your changes using:
 
-git push origin "your-branchname"
+Step 9: After committing your changes, 
 
-Note: If it's a bug fix, use "bug:message" for branch and commit message
+      run > git pull upstream develop (to make sure your branch is still up to date with develop branch)
+
+Step 10: Now run > git push origin your-branch-name
+
 
 STEPS TO CREATING A PULL REQUEST
 
-Step 1: After pushing your commit to github, navigate to your repository page on github where you pushed your commit.
+Step 1: After pushing your commit to github, navigate to your forked repository page on github where you pushed your commit.
 
 Step 2: At the top part of the page you should see a dropdown section titled ‘Branch:main; select in the dropdown, the branch that contains your commits. The default is usually the main branch.
 
