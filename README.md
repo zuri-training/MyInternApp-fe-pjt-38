@@ -45,7 +45,7 @@ Javascript (Frontend), Python (Backend), Flutter (Mobile)
 ## Instructions for Frontend developers
 ### STEPS To Collaborate on the Repository
 
-Step 1. To Access the repository link, you may go through the invitation email sent, then Click on the FORK button on the upper right-hand Corner of the Repo page to fork a copy of the repository.
+Step 1. To access the repository link, you may go through the invitation email sent, then Click on the FORK button on the upper right-hand Corner of the Repo page to fork a copy of the repository.
 
 Step 2. CLONE the repository by clicking on the CODE button, Copy the URL  without quotes   by running > git clone "git@github.com:zuri-training/MyInternApp-fe-pjt-38.git".
 
