@@ -1,59 +1,324 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous" />
-    <link rel="stylesheet" href="css/explore-jobs.css" />
-    <title>MyInterns App</title>
-  </head>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <body>
-    <header class="header">
-      <nav class="navbar navbar-expand-lg navbar-light pt-3 pb-3">
-        <div class="container">
-          <a class="navbar-brand" href="#">MyInternApp</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <form class="d-flex m-auto">
-              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
-              <button class="btn btn-outline-success" type="submit">Search</button>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/explore-jobs.css" />
+  <title>MyInterns App</title>
+</head>
+
+<body>
+  <!-- Top Nav Bar -->
+
+  <!-- <header class="header">
+    <nav class="navbar navbar-expand-lg navbar-light pt-3 pb-3">
+      <div class="container">
+        <a class="navbar-brand" href="#">MyInternApp</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <div class="header-search-box mx-auto"> -->
+            <!-- TODO: You can add the class name "accordion-body" back to the div above. -->
+            <!-- <form>
+              <div class="search-box-container">
+                <label class="search">
+                  <svg class="search--icon" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" style="height: 25px; fill: #90929e">
+                    <path d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"></path>
+                  </svg>
+                </label>
+                <input type="search" title="Search" id="search" placeholder="Search" class="bg-none" />
+              </div>
             </form>
-            <ul class="navbar-nav mb-2 mb-lg-0">
-              <li class="nav-item me-3">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
-              </li>
-              <li class="nav-item dropdown me-3">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Explore</a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li><a class="dropdown-item text-primary" href="#">Action</a></li>
-                  <li><a class="dropdown-item text-primary" href="#">Another action</a></li>
-                  <li>
-                    <hr class="dropdown-divider" />
-                  </li>
-                  <li><a class="dropdown-item text-secondary" href="#">Something else here</a></li>
-                </ul>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">#icons</a>
-              </li>
-            </ul>
           </div>
+          <ul class="navbar-nav mb-2 mb-lg-0">
+            <li class="nav-item me-3">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item dropdown me-3">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Explore</a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item text-primary" href="#">Action</a></li>
+                <li><a class="dropdown-item text-primary" href="#">Another action</a></li>
+                <li>
+                  <hr class="dropdown-divider" />
+                </li>
+                <li><a class="dropdown-item text-secondary" href="#">Something else here</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"><i class="fa fa-envelop"></i></a>
+            </li>
+          </ul>
         </div>
-      </nav>
-    </header>
+      </div>
+    </nav>
+  </header> -->
 
-    <main></main>
+  <!-- Main Body -->
+  <section class="container my-5 ">
+    <div class="row">
+      <!-- Aside Filter -->
+      <aside class="col-lg-4 mb-5">
+        <section class="filter">
+          <h3 class="mb-5">Filter by</h3>
+          <div class="accordion-flush" id="accordionPanelsStayOpenExample">
+            <!-- Category Filter -->
+            <section class="accordion-item bg-none">
+              <h6 class="btn-tgif">
+                Category
+              </h6>
+                <div class="search-box">
+                  <!-- TODO: You can add the class name "accordion-body" back to the div above. -->
+                  <form>
+                    <div class="search-box-container">
+                      <label class="search">
+                        <svg class="search--icon" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" style="height: 25px; fill: #90929e">
+                          <path d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"></path>
+                        </svg>
+                      </label>
+                      <input type="search" title="Search" id="search" placeholder="Search Catergories" />
+                    </div>
+                  </form>
+                </div>
+            </section>
+            <!-- Job Type Filter -->
+            <section class="mt-4 bg-none">
+              <h6 class="btn-tgif">
+                Job Type
+              </h6>
+                <div class="accordion-body">
+                    <!-- TODO: forget about this bootstrap for this section. Come back and use your own JS and CSS to handle this. -->
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" />
+                      <label class="form-check-label" for="flexRadioDefault1">
+                        Hourly</label>
+                        <br />
+                        <div class="form-check form-check-inline w-50 me-0">
+                          <input class="form-check-input form-check-inline" type="checkbox" value="" id="flexCheckChecked" checked />
+                          <label class="form-check-label w-50" for="flexCheckChecked">
+                            <input type="number" name="min" id="min" placeholder="$ Min" class="w-75"> /hr
+                          </label>
+                          <input class="form-check-input form-check-inline" type="checkbox" value="" id="flexCheckDefault" />
+                          <label class="form-check-label w-50" for="flexCheckDefault"> <input type="number" name="max" placeholder="$ Max" class="w-75">
+                            </label>
+                            </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" name="flexRadioDefault" id="fixedPrice" checked />
+                      <label class="form-check-label" for="fixedPrice"> Fixed Price 
+                        <br>
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
+                    <label class="form-check-label w-50" for="flexCheckDefault">Less than $100</label>
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
+                    <label class="form-check-label w-50" for="flexCheckDefault">$100 - $500</label>
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
+                    <label class="form-check-label w-50" for="flexCheckDefault">$500+</label>
+                      </label>
+                    </div>
 
-    <footer></footer>
+                </div>
+            </section>
+            <hr>
+            <!-- Project Length Filter -->
+            <section class="mt-4 bg-none">
+              <h6 class="btn-tgif">
+                Project Length
+              </h6>
+                <div class="accordion-body">
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" name="project-length" id="one-to-five-days" />
+                      <label class="form-check-label" for="one-to-five-days"> 1 -5 days</label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" name="project-length" id="less-than-one-week" />
+                      <label class="form-check-label" for="less-than-one-week"> Less than 1 week</label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" name="project-length" id="one-to-two-months" />
+                      <label class="form-check-label" for="one-to-two-months"> 1 - 2 months</label>
+                    </div>
+                </div>
+            </section>
+          </div>
+        </section>
+      </aside>
+      <!-- Main -->
 
-    this is the very beginning of our boostrap app
+      <section class="col-lg-8">
+          <div class="row w-100 mx-auto">
+            <div class="input-group col-lg-8">
+              <div class="input-box">
+                <input type="search" placeholder="Search" required class="name">
+                <i class="fa fa-search"></i>
+              </div>
+            </div>
+            <div class="col-lg-3 py-1 px-0 ms-auto w-25">
+              <select class="form-select py-2 me-0" aria-label="Default select example">
+                <option selected><strong>Sort by:</strong> Most Recent</option>
+                <option value="1">Duration</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+              </select>
+            </div>
+          </div>
+        <main class="mb-5 bg-white rounded-3 pb-5 px-4 job-view">
+          <!-- #1 Job Tile -->
+          <section class="job-tile">
+            <div class="job-tile-wrapper pt-5 px-4 mt-5 mb-5">
+              <h3><a href="#" class="job-title">Graphics Designer for FB Banner</a></h3>
+              <p class="job-description">I’m looking for a graphic designer can create 100 facebook banner in a week. He/she must be a professional.</p>
+              <div class="row">
+                <p class="job-type col">Hourly</p>
+                <p class="price col border-start border-end border-dark border-2 text-center">$25.00</p>
+                <p class="expert-level col border-end border-dark border-2 text-center">Intermediate</p>
+                <p class="duration col-lg-5">Duration: 2021/06/18 - 2021/06/25</p>
+              </div>
+              <div class="job-info">
+                <p class="proposal">Proposal: 4</p>
+                <div class="row">
+                  <p class="location col">location: Nigeria</p>
+                  <p class="posted col-lg text-end">Posted: <span class="c-tgif"> 2 days ago</span></p>
+                </div>
+              </div>
+              <div class="skills">
+                <small class="me-1 bg-tgif rounded-pill py-1 px-2 text-center">
+                  <a href="#" class="skill-badge">Adobe Illustrator</a>
+                </small>
+                <small class="mx-1 bg-tgif rounded-pill py-1 px-2 text-center">
+                  <a href="#" class="skill-badge">Canva</a>
+                </small>
+                <small class="mx-1 bg-tgif rounded-pill py-1 px-2 text-center">
+                  <a href="#" class="skill-badge">Figma</a>
+                </small>
+                <small class="mx-1 bg-tgif rounded-pill py-1 px-2 text-center">
+                  <a href="#" class="skill-badge">Adobe Photoshop</a>
+                </small>
+              </div>
+            </div>
+          </section>
+          <hr>
+          <!-- #2 Job Tile -->
+          <section class="job-tile">
+            <div class="job-tile-wrapper px-4 mt-5 mb-5">
+              <h3><a href="#" class="job-title">Data Analyst</a></h3>
+              <p class="job-description">Looking for a data anayst that can our business data and breakdown each data and give recoommendation.</p>
+              <div class="row">
+                <p class="job-type col">Hourly</p>
+                <p class="price col border-start border-end border-dark border-2 text-center">$50.00</p>
+                <p class="expert-level col border-end border-dark border-2 text-center">Expert</p>
+                <p class="duration col-lg-5">Duration: 2021/06/18 - 2021/06/25</p>
+              </div>
+              <div class="job-info">
+                <p class="proposal">Proposal: 0</p>
+                <div class="row">
+                  <p class="location col">location: Germany</p>
+                  <p class="posted col-lg text-end">Posted: <span class="c-tgif"> 24 hrs ago</span></p>
+                </div>
+              </div>
+              <div class="skills">
+                <small class="me-1 bg-tgif rounded-pill py-1 px-2 text-center">
+                  <a href="#" class="skill-badge">Data Analyst</a>
+                </small>
+                <small class="mx-1 bg-tgif rounded-pill py-1 px-2 text-center">
+                  <a href="#" class="skill-badge">Python</a>
+                </small>
+                <small class="mx-1 bg-tgif rounded-pill py-1 px-2 text-center">
+                  <a href="#" class="skill-badge">SQL</a>
+                </small>
+                <small class="mx-1 bg-tgif rounded-pill py-1 px-2 text-center">
+                  <a href="#" class="skill-badge">Power Bi</a>
+                </small>
+              </div>
+            </div>
+          </section>
+          <hr>
+          <!-- #3 Job Tile -->
+          <section class="job-tile">
+            <div class="job-tile-wrapper px-4 mt-5 mb-5">
+              <h3><a href="#" class="job-title">3D Architectural design</a></h3>
+              <p class="job-description">3D Atchitect design of a 3 building. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              <div class="row">
+                <p class="job-type col">Hourly</p>
+                <p class="price col border-start border-end border-dark border-2 text-center">$25.00</p>
+                <p class="expert-level col border-end border-dark border-2 text-center">Intermediate</p>
+                <p class="duration col-lg-5">Duration: 2021/06/18 - 2021/06/25</p>
+              </div>
+              <div class="job-info">
+                <p class="proposal">Proposal: 4</p>
+                <div class="row">
+                  <p class="location col">location: Nigeria</p>
+                  <p class="posted col-lg text-end">Posted: <span class="c-tgif"> 2 days ago</span></p>
+                </div>
+              </div>
+              <div class="skills">
+                <small class="me-1 bg-tgif rounded-pill py-1 px-2 text-center">
+                  <a href="#" class="skill-badge">Adobe Illustrator</a>
+                </small>
+                <small class="mx-1 bg-tgif rounded-pill py-1 px-2 text-center">
+                  <a href="#" class="skill-badge">Canva</a>
+                </small>
+                <small class="mx-1 bg-tgif rounded-pill py-1 px-2 text-center">
+                  <a href="#" class="skill-badge">Figma</a>
+                </small>
+                <small class="mx-1 bg-tgif rounded-pill py-1 px-2 text-center">
+                  <a href="#" class="skill-badge">Adobe Photoshop</a>
+                </small>
+              </div>
+            </div>
+          </section>
+          <hr>
+          <!-- #4 Job Tile -->
+          <section class="job-tile">
+            <div class="job-tile-wrapper px-4 mt-5 mb-5">
+              <h3><a href="#" class="job-title">Content writer</a></h3>
+              <p class="job-description">Looking for a data anayst that can our business data and breakdown each data and give recoommendation.</p>
+              <div class="row">
+                <p class="job-type col">Hourly</p>
+                <p class="price col border-start border-end border-dark border-2 text-center">$25.00</p>
+                <p class="expert-level col border-end border-dark border-2 text-center">Intermediate</p>
+                <p class="duration col-lg-5">Duration: 2021/06/18 - 2021/06/25</p>
+              </div>
+              <div class="job-info">
+                <p class="proposal">Proposal: 4</p>
+                <div class="row">
+                  <p class="location col">location: Nigeria</p>
+                  <p class="posted col-lg text-end">Posted: <span class="c-tgif"> 2 days ago</span></p>
+                </div>
+              </div>
+              <div class="skills">
+                <small class="me-1 bg-tgif rounded-pill py-1 px-2">
+                  <a href="#" class="skill-badge">Microsoft Word</a>
+                </small>
+                <small class="mx-1 bg-tgif rounded-pill py-1 px-2">
+                  <a href="#" class="skill-badge">Proofreader</a>
+                </small>
+                <small class="mx-1 bg-tgif rounded-pill py-1 px-2">
+                  <a href="#" class="skill-badge">Figma</a>
+                </small>
+                <small class="mx-1 bg-tgif rounded-pill py-1 px-2">
+                  <a href="#" class="skill-badge">Adobe Photoshop</a>
+                </small>
+              </div>
+            </div>
+          </section>
+          </div>
+        </main>
+      </section>
+    </div>
+  </section>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
-    <script src="js/explore-jobs.js"></script>
-  </body>
+  <!-- footer -->
+  <footer></footer>
+
+  <!-- Script -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+  <script src="js/explore-jobs.js"></script>
+</body>
+
 </html>
