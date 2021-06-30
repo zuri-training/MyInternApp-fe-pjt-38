@@ -20,12 +20,16 @@
 	<body>
 		<div class="row p-3 justify-content-center">
 			<div class="col-12 col-md-6 p-md-5 my-5">
-				<div class="m-md-3 p-md-5">
+				<div class="m-md-3">
 					<div class="d-flex my-4">
 						<img class="me-2 img-fluid" src="../img/logo.svg" alt="" />
 						<h3 class="fs-4">MyIntern</h3>
 					</div>
-					<form id="login_form" class="p-5 py-5 login-form-container">
+					<form
+						id="login_form"
+						class="p-5 py-5 login-form-container"
+						method="POST"
+					>
 						<div class="d-flex justify-content-between">
 							<p class="fw-light">Sign in</p>
 							<a href="#" class="forgot-password">Forgot password?</a>
@@ -88,7 +92,8 @@
 						<div class="col-6 d-flex flex-column">
 							<p class="m-0 lh-sm fw-normal">Don’t have an account?</p>
 							<a
-								href="./signup.html"
+								data-bs-toggle="modal"
+								data-bs-target="#exampleModal"
 								class="
 									m-0
 									fw-normal
@@ -103,6 +108,42 @@
 						<div class="col-6 d-flex flex-column align-items-end">
 							<p class="m-0 fw-normal">Sign in with SSO</p>
 							<p class="m-0 fw-normal">Sign in with Apple</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Modal -->
+		<div
+			class="modal fade"
+			id="exampleModal"
+			tabindex="-1"
+			aria-labelledby="exampleModalLabel"
+			aria-hidden="true"
+		>
+			<div class="modal-dialog modal-dialog-centered">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h3 class="text-tertiary">Sign Up As</h3>
+						<button
+							type="button"
+							class="btn-close"
+							data-bs-dismiss="modal"
+							aria-label="Close"
+						></button>
+					</div>
+					<div class="modal-body">
+						<div class="d-flex justify-content-around">
+							<a
+								class="text-decoration-none text-tertiary"
+								href="./student-signup.html"
+								>A Student</a
+							>
+							<a
+								class="text-decoration-none text-tertiary"
+								href="./employer-signup.html"
+								>An Employer</a
+							>
 						</div>
 					</div>
 				</div>
