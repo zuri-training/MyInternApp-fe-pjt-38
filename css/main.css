@@ -49,9 +49,9 @@ img.user-img-dropdown {
 }
 
 @media (min-width: 1128px) {
-	.top-nav-item li {
+	/* .top-nav-item li {
 		margin-left: 3rem;
-	}
+	} */
 
 	img.user-img-dropdown {
 		width: 55px;
