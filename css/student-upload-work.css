@@ -109,6 +109,16 @@ img.tag-icon {
 	color: #2ec4b6;
 }
 
+.btn-submit {
+	background: #2ec4b6;
+	color: #ffffff;
+}
+
+.btn-submit:hover {
+	background: #147e73;
+	color: #ffffff;
+}
+
 ::placeholder {
 	color: #88858593;
 	font-size: 0.75rem;
