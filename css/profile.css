@@ -1,0 +1,31 @@
+.alert-custom {
+	background: #ffffff;
+	box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
+}
+
+.user-image {
+	width: 65px;
+	height: 65px;
+	border-radius: 50%;
+}
+
+.contact-btn {
+	background-color: #005387;
+	border: none;
+	color: #ffffff;
+}
+
+.blue-card {
+	height: 209px;
+	background-color: #005287;
+	background-image: url("../img/eclipses.svg");
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: center;
+	border-radius: 10px;
+	position: relative;
+}
+
+.my-posts {
+	background: #ffffff;
+}
