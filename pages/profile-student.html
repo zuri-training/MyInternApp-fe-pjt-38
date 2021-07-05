@@ -151,7 +151,9 @@
 								"
 							>
 								<img src="../img/user-img.svg" class="mb-3 user-image" alt="" />
-								<h5>Tayo Kemi</h5>
+								<h5>
+									Tayo Kemi <i class="bi bi-check2-all text-tertiary"></i>
+								</h5>
 								<p class="mt-0">
 									Student. <span class="fw-bold">UNN, Nsukka</span>
 								</p>
@@ -165,7 +167,11 @@
 										/></span>
 										Hire Me
 									</button>
-									<button class="btn px-2 contact-btn">
+									<button
+										class="btn px-2 contact-btn"
+										data-bs-toggle="modal"
+										data-bs-target="#contact_student"
+									>
 										<i class="bi bi-chat"></i> Contact
 									</button>
 								</div>
@@ -243,6 +249,68 @@
 							</div>
 						</div>
 						<p class="fw-bold text-center my-5">User has not posted any jobs</p>
+					</div>
+				</div>
+			</div>
+			<!-- Modal -->
+			<div
+				class="modal fade"
+				id="contact_student"
+				tabindex="-1"
+				aria-labelledby="exampleModalLabel"
+				aria-hidden="true"
+			>
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-header">
+							<h5 class="modal-title" id="exampleModalLabel">Message me</h5>
+							<button
+								type="button"
+								class="btn-close"
+								data-bs-dismiss="modal"
+								aria-label="Close"
+							></button>
+						</div>
+						<div class="modal-body">
+							<form
+								name="message_student"
+								id="message_student"
+								action=""
+								method="POST"
+							>
+								<div class="mb-3">
+									<label for="subject" class="form-label">Subject</label>
+									<input
+										type="text"
+										class="form-control"
+										name="subject"
+										id="subject"
+										placeholder="Type here...."
+									/>
+								</div>
+								<div class="mb-3">
+									<label for="message" class="form-label">Message</label>
+									<textarea
+										class="form-control"
+										name="message"
+										id="message"
+										rows="4"
+										placeholder="Type here...."
+									></textarea>
+								</div>
+							</form>
+						</div>
+						<div class="modal-footer">
+							<button type="button" class="btn btn-send">Send message</button>
+
+							<button
+								type="button"
+								class="btn btn-dark"
+								data-bs-dismiss="modal"
+							>
+								Cancel
+							</button>
+						</div>
 					</div>
 				</div>
 			</div>
