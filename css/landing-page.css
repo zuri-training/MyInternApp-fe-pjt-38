@@ -262,7 +262,7 @@ header {
 	left: 0;
 	top: 0;
 	width: max(25rem, 32%);
-	height: 100%;
+	height: 35%;
 	background-color: white;
 	z-index: 1000;
 	margin: 0 -30px;
@@ -299,8 +299,8 @@ header {
 	right: 0;
 	top: 0;
 	width: max(25rem, 32%);
-	height: 100%;
-	background-color: white;
+	height: 20%;
+	/* background-color: white; */
 	z-index: 1000;
 	margin: 0 -30px;
 }
@@ -310,6 +310,9 @@ header {
 	left: initial;
 }
 
+.landing-nav .brand-logo {
+	margin-left: 2rem;
+}
 .brand-logo img {
 	max-width: 5rem;
 }
