@@ -29,3 +29,50 @@
 .my-posts {
 	background: #ffffff;
 }
+
+.modal-header {
+	border-bottom: none !important;
+}
+
+.modal-footer {
+	border-top: none !important;
+}
+
+#message_student input,
+#message_student textarea {
+	background: #f7f7f7;
+}
+
+.btn-send {
+	background: #2ec4b6 !important;
+	color: #ffffff;
+}
+
+.btn-send:hover {
+	background: #138d81 !important;
+	color: #ffffff;
+}
+
+::placeholder {
+	color: #88858593;
+	font-size: 0.75rem;
+	font-weight: 150;
+	font-style: italic;
+	opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder {
+	/* Internet Explorer 10-11 */
+	color: #88858593;
+	font-size: 0.75rem;
+	font-weight: 150;
+	font-style: italic;
+}
+
+::-ms-input-placeholder {
+	/* Microsoft Edge */
+	color: #88858593;
+	font-size: 0.75rem;
+	font-weight: 150;
+	font-style: italic;
+}
